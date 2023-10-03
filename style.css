@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&family=Poppins:ital,wght@1,200&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background: url(snow-mountain-thumb.jpg);    
+    background-size: cover;
+    background-position: center;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    /*background: transparent;*/
+    background-color: black;
+    opacity: 0.4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100px;
+}
+.logo{
+    font-size: 32px;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 700;
+    border: 3px solid aliceblue;
+    border-radius: 50%;
+    padding: 5px;
+}
+.logo span{
+    color:burlywood;
+}
+
+.navbar a{
+    position: relative;
+    margin-left: 40px;
+    font-size: 18px;
+    color: aliceblue;
+    font-weight: 500;
+    text-decoration: none;
+    
+}
+
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: bisque;
+    transition: .3s;
+}
+
+.navbar a:hover::before{
+    width: 100%;
+    
+}
+.navbar a:hover{
+    color:chocolate;
+}
+
+.sidebar{
+    color: aliceblue;
+    padding: 20px;
+    position: relative;
+    top: 80px;
+    right: 15px;
+    background-color: black;
+    display: inline-flex;
+    opacity: 0.4;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0px 70px 50px 90px;
+    text-align: center;
+}
+
+nav h2{
+    text-decoration: underline;
+    position: relative;
+    left: 120px;
+}
+
+ul{
+    position: relative;
+    top: 20px;
+}
+ul li{
+    padding: 30px;
+    font-size: large;
+    font-weight: bold;
+    margin-left: 0px;
+}
+ul li:hover{
+    border: 2px solid white;
+    border-radius: 6px;
+}
+
+.container{
+    float: right;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    position: relative;
+    top: 100px;
+    right: 220px;
+}
+.card{
+    background-color: aliceblue;
+    width: 270px;
+    margin: 10px;
+    border-radius: 15px;
+}
+.card-image{
+    height: 150px;
+    margin-bottom: 15px;
+    background-size: cover;
+}
+
+.c1{
+    background-image: url(mern.png);
+}
+.c2{
+    background-image: url(flutter-3.png);
+}
+.c3{
+    background-image: url(ai.webp);
+}
+.card p{
+    padding: 10px;
+}
+.card a{
+    background-color: black;
+    color: aliceblue;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 6px;
+    margin: 20px 50px;
+    text-decoration: none;
+}
+.container h2{
+    text-align: center;
+}
+
+.card:hover{
+    background-color: rgb(0, 0, 59);
+    color: aliceblue;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: 1s ease;
+}
